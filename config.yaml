@@ -1,0 +1,54 @@
+sensor:
+  - platform: mqtt
+    unique_id: purpleair_temp
+    name: 'PurpleAir - Temperature'
+    state_topic: "purpleair/current_temp_f"
+    device_class: "temperature"
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_humidity
+    name: 'PurpleAir - Humidity'
+    state_topic: "purpleair/current_humidity"
+    device_class: "humidity"
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_pm2.5_aqi
+    name: 'PurpleAir - Air Quality pm 2.5'
+    state_topic: "purpleair/pm2.5_aqi"
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_0.5um
+    name: 'PurpleAir - Particulates 0.5um'
+    state_topic: "purpleair/p_0_5_um"
+    unit_of_measurement: 'μm'
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_1.0um
+    name: 'PurpleAir - Particulates 1.0um'
+    state_topic: "purpleair/p_1_0_um"
+    unit_of_measurement: 'μm'
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_2.5um
+    name: 'PurpleAir - Particulates 2.5um'
+    state_topic: "purpleair/p_2_5_um"
+    unit_of_measurement: 'μm'
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_5.0um
+    name: 'PurpleAir - Particulates 5.0um'
+    state_topic: "purpleair/p_5_0_um"
+    unit_of_measurement: 'μm'
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_10.0um
+    name: 'PurpleAir - Particulates 10.0um'
+    state_topic: "purpleair/p_10_0_um"
+    unit_of_measurement: 'μm'
+    qos: 0
+  - platform: mqtt
+    unique_id: purpleair_particulate_0.3um
+    name: 'PurpleAir - Particulates 0.3um'
+    state_topic: "purpleair/p_0_3_um"
+    unit_of_measurement: 'μm'
+    qos: 0
